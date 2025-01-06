@@ -32,7 +32,6 @@ jobs:
     - name: Configure kubectl
       run: |
         aws eks update-kubeconfig --name demo-eks-cluster-test --region us-east-1  # Replace with your EKS cluster name and region
-        aws eks update-kubeconfig --region <region> --name <cluster-name>
 
     # Build Docker image and push to ECR
     - name: Log in to Amazon ECR
