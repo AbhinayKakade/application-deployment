@@ -39,7 +39,7 @@ jobs:
 
     - name: Build and push Docker image
       run: |
-        docker build -t frontend:latest .  # Build the Docker image
+        docker build -f frontend/Dockerfile -t frontend:latest .  # Build the Docker image from frontend/Dockerfile
         docker tag frontend:latest 796973520907.dkr.ecr.us-east-1.amazonaws.com/frontend:latest
         docker push 796973520907.dkr.ecr.us-east-1.amazonaws.com/frontend:latest  # Push to ECR
 
