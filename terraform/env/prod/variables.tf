@@ -61,4 +61,3 @@ variable "eks_managed_node_group_defaults" {
 variable "eks_managed_node_groups" {
   description = "Configuration for individual EKS managed node groups."
 }
-ls
