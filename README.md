@@ -3,6 +3,7 @@
 This document outlines the process of creating an Amazon Elastic Kubernetes Service (EKS) cluster using Terraform and deploying both frontend and backend applications on Amazon EKS using a GitHub Actions CI/CD pipeline. The deployed applications are connected to a load balancer to expose them to the internet.
 
 ## Table of Contents
+- [Pre-requisites](#pre-requisites)
 - [Pre-understanding of GitHub Repo Branch Structure](#pre-understanding-of-github-repo-branch-structure)
 - [Create Infrastructure Using Terraform](#create-infrastructure-using-terraform)
 - [Deploying Application in EKS Using GitHub Actions](#deploying-application-in-eks-using-github-actions)
@@ -11,7 +12,15 @@ This document outlines the process of creating an Amazon Elastic Kubernetes Serv
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
 
-## 1. Pre-understanding of GitHub Repo Branch Structure
+## 1. Pre-requisites
+Before proceeding, ensure the following requirements are met:
+- AWS account with appropriate permissions to manage EKS and other AWS resources.
+- Terraform installed on your local machine.
+- Git and GitHub CLI tools installed.
+- Docker installed for containerizing applications.
+- Basic understanding of CI/CD pipelines and Kubernetes.
+
+## 2. Pre-understanding of GitHub Repo Branch Structure
 
 The GitHub repository has three primary branches used for deployment:
 
@@ -29,7 +38,7 @@ The GitHub repository has three primary branches used for deployment:
 
 This workflow ensures a streamlined and efficient CI/CD process for both frontend and backend applications.
 
-## 2. Create Infrastructure Using Terraform
+## 3. Create Infrastructure Using Terraform
 
 ### Steps:
 
@@ -59,7 +68,7 @@ This workflow ensures a streamlined and efficient CI/CD process for both fronten
    ```
    Confirm the action by typing `yes` when prompted. This will provision the EKS cluster and related infrastructure.
 
-## 3. Deploying Application in EKS Using GitHub Actions
+## 4. Deploying Application in EKS Using GitHub Actions
 
 ### Steps:
 
@@ -83,7 +92,7 @@ This workflow ensures a streamlined and efficient CI/CD process for both fronten
 
 6. **Application Exposure:** The application is exposed to the internet via a load balancer as part of the deployment process.
 
-## 4. Usage
+## 5. Usage
 
 ### Accessing the Application:
 The application can be accessed using the URL provided by the load balancer.
@@ -91,14 +100,14 @@ The application can be accessed using the URL provided by the load balancer.
 ### Testing:
 Ensure that the frontend and backend endpoints are reachable and functional.
 
-## 5. Features
+## 6. Features
 
 - Automated CI/CD pipelines using GitHub Actions.
 - Scalable application deployment on Amazon EKS.
 - Infrastructure provisioning with Terraform.
 - Secure and efficient application exposure using a load balancer.
 
-## 6. Troubleshooting
+## 7. Troubleshooting
 
 ### Common Issues:
 
@@ -108,6 +117,6 @@ Ensure that the frontend and backend endpoints are reachable and functional.
 2. **Application not accessible:**
    - **Solution:** Verify the load balancer configuration and security group settings.
 
-## 7. Contributing
+## 8. Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for review.
