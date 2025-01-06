@@ -22,6 +22,11 @@
             margin: 0;
             font-size: 36px;
         }
+        header h2 {
+            margin: 10px 0 0;
+            font-size: 28px;
+            color: white; /* Changed to white */
+        }
         .company-name {
             font-size: 48px;
             font-weight: bold;
@@ -42,6 +47,13 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #e0e0e0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-box:hover, .testimonial-box:hover, .case-study-box:hover, .milestone-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            border-color: #004d99; /* Highlight border */
         }
         h2 {
             font-size: 28px;
