@@ -27,6 +27,8 @@ The GitHub repository has three primary branches used for deployment:
 - **Frontend CI/CD**: Contains the configuration and scripts necessary for deploying the frontend application.
 - **Backend CI/CD**: Contains the configuration and scripts necessary for deploying the backend application.
 - **Dev**: The development branch where developers push their changes.
+  
+![image](https://github.com/user-attachments/assets/d6db7d08-377e-45df-90c2-04d6abde5fd0)
 
 ### Branch Workflow:
 1. Developers push code to the `Dev` branch for initial development and testing.
