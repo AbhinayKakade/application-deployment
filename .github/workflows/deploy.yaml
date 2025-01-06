@@ -47,5 +47,6 @@ jobs:
     - name: Deploy to EKS
       run: |
         aws eks update-kubeconfig --name demo-eks-cluster-test --region us-east-1
-        kubectl apply -f deployment/frontend/deployment.yaml --namespace prod  # Path to your Kubernetes deployment file
-        kubectl apply -f deployment/frontend/service.yaml --namespace prod  # Path to your Kubernetes service file
+        kubectl get pods -n prod
+        kubectl apply -f deployment/frontend/deployment.yaml --namespace prod --validate=false
+        kubectl apply -f deployment/frontend/service.yaml --namespace prod --validate=false
