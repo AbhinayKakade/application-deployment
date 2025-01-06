@@ -2,16 +2,16 @@
 FROM golang:1.20
 
 # Set the working directory
-WORKDIR /app/frontend
+WORKDIR /app
 
-# Copy go mod and sum files
-COPY frontend/go.mod ./
+# Copy go mod and sum files from the frontend directory
+COPY frontend/go.mod ./frontend/go.mod
 
 # Download dependencies
 RUN go mod download
 
-# Copy the application code
-COPY frontend/ .
+# Copy the application code from the frontend directory
+COPY frontend/ ./frontend/
 
 # Build the application
 RUN go build -o backend .
