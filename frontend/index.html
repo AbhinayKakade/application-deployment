@@ -1,10 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Frontend</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Transformation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #004d99; /* Dark Blue */
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .company-name {
+            font-size: 48px;
+            font-weight: bold;
+            color: #ff9900; /* Orange */
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        .featured-services, .services, .contact-info, .milestones, .testimonials, .case-studies {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .service-box, .testimonial-box, .case-study-box, .milestone-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #004d99; /* Dark Blue */
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+        .cta-btn {
+            background-color: #004d99; /* Dark Blue */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #004d99; /* Dark Blue */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the Static Frontend!</h1>
-    <p>This is served as a static app.</p>
+
+<header>
+    <h1 class="company-name">Manhattan Tech Ventures Pvt. Ltd.</h1>
+    <h2>Boost Your Business Through Digital Transformation</h2>
+</header>
+
+<section>
+    <h2>Are You Struggling to establish a strong online presence?</h2>
+    <p>Then you are in the right place at the right time. We craft intelligent solutions for new-age businesses.</p>
+</section>
+
+<section class="services">
+    <div class="service-box">
+        <h3>The Art of Intelligent Conversation</h3>
+        <p>Crafting intelligent Chatbots for your website.</p>
+    </div>
+    <div class="service-box">
+        <h3>Custom Mobile App Development</h3>
+        <p>Empowering businesses to bring their vision to life with custom mobile apps.</p>
+    </div>
+    <div class="service-box">
+        <h3>Analytics Services</h3>
+        <p>Unleash the power of Data Analytics and gain actionable intelligence from your data.</p>
+    </div>
+</section>
+
+<section class="featured-services">
+    <h2>Featured Services</h2>
+    <div class="service-box">
+        <p>Video CDN</p>
+    </div>
+    <div class="service-box">
+        <p>Messaging Communication</p>
+    </div>
+    <div class="service-box">
+        <p>Artificial Intelligence</p>
+    </div>
+    <div class="service-box">
+        <p>Email</p>
+    </div>
+</section>
+
+<section class="milestones">
+    <h2>We are Masters of Creating Milestones</h2>
+    <div class="milestone-box">
+        <h3>200,000+ Hours of Development</h3>
+    </div>
+    <div class="milestone-box">
+        <h3>10 Years of Service</h3>
+    </div>
+    <div class="milestone-box">
+        <h3>100's of Projects</h3>
+    </div>
+    <div class="milestone-box">
+        <h3>200+ Happy Clients</h3>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>Tales of Trust</h2>
+    <div class="testimonial-box">
+        <p>"Our customers experienced effortless document retrieval from extensive data using QInfo. The product development achieved by MM Team has brought us great satisfaction." – Kaushik Banerjee, Owner - Automatirx Innovations Pvt Ltd</p>
+    </div>
+</section>
+
+<section class="case-studies">
+    <h2>Case Studies</h2>
+    <div class="case-study-box">
+        <p>From Challenge to Triumph: Exploring unforgettable journeys through real-life stories.</p>
+    </div>
+</section>
+
+<section class="contact-info">
+    <h2>Contact Us</h2>
+    <p>New York: C/o, Mediamorphosis Advertising & Technology Inc, 35-37 36th St Astoria, NY 11106</p>
+    <p>Mumbai: 604 "B" Wing, Swiss Palace Co-operative Housing Society, Shashtri Nagar, Lokhandwala, Andheri (W), Mumbai 40005</p>
+    <p>Kolkata: 17th Floor, ERGO Tower, Street Number 23, Sector V, Bidhannagar, Kolkata, West Bengal 700091</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Digital Transformation Solutions | All Rights Reserved</p>
+    <a href="#" class="cta-btn">Get Started</a>
+</footer>
+
 </body>
 </html>
